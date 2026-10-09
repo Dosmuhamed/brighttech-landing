@@ -1,0 +1,622 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bright Tech — цифровой контур для строительства и девелопмента</title>
+  <meta name="description" content="Bright Tech — отраслевой интегратор для строительства и девелопмента. Связываем 1С, сметы, договоры, акты, ТМЦ, платежи, сроки и качество в единую систему. Tempo Build, BI и AI-модули." />
+  <meta name="theme-color" content="#0b1030" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230b1030'/%3E%3Cpath d='M20 14v36M20 34a12 12 0 1 0 0-.1' stroke='%234cb3e8' stroke-width='7' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='46' cy='16' r='6' fill='%23f27a2e'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="logo" aria-label="Bright Tech — на главную">
+        <span class="logo-word">br<span class="logo-i">ı</span>ght</span>
+        <span class="logo-word">te<span class="logo-accent">ch</span></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">Компания</a>
+        <a href="#model">Подход</a>
+        <a href="#tempo">Tempo Build</a>
+        <a href="#ai">AI</a>
+        <a href="#cases">Кейсы</a>
+        <a href="#packages">Пакеты</a>
+        <a href="#contact" class="nav-links-cta">Экспресс-аудит</a>
+      </nav>
+      <a href="#contact" class="btn btn-sm btn-primary nav-cta">Экспресс-аудит <span class="arr">→</span></a>
+      <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-grid-lines"></div>
+      <div class="glow glow-1"></div>
+      <div class="glow glow-2"></div>
+    </div>
+
+    <div class="container hero-layout">
+      <div class="hero-copy">
+        <div class="pill" data-reveal><span class="pulse"></span>Отраслевой интегратор для строительства и девелопмента</div>
+        <h1 data-reveal style="--d:.08s">Собираем стройку в&nbsp;единый <span class="grad">цифровой контур</span></h1>
+        <p class="lead" data-reveal style="--d:.16s">Связываем 1С, сметы, договоры, акты, ТМЦ, платежи, сроки и качество в одну управляемую систему — и подключаем AI там, где он даёт реальный эффект.</p>
+        <div class="actions" data-reveal style="--d:.24s">
+          <a href="#contact" class="btn btn-primary">Пройти экспресс-аудит <span class="arr">→</span></a>
+          <a href="#tempo" class="btn btn-ghost">Смотреть Tempo Build</a>
+        </div>
+        <div class="hero-geo" data-reveal style="--d:.32s">
+          <span class="mono">// работаем в</span>
+          <span>Казахстан</span><i></i><span>Узбекистан</span><i></i><span>Россия</span>
+        </div>
+      </div>
+
+      <div class="hero-visual" id="heroVisual" aria-hidden="true">
+        <canvas id="city"></canvas>
+        <div class="float-card fc-1">
+          <span class="fc-icon ok">✓</span>
+          <div><b>КС-2 №47 подписан</b><span>акт ушёл в 1С · 2 мин назад</span></div>
+        </div>
+        <div class="float-card fc-2">
+          <span class="fc-label">ТМЦ · поставка</span>
+          <div class="fc-bar"><i style="--w:92%"></i></div>
+          <span class="fc-num">92%</span>
+        </div>
+        <div class="float-card fc-3">
+          <span class="fc-dot"></span>
+          <div><b>График: −2 дня</b><span>опережение по секции Б</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="stats">
+        <div class="stat" data-reveal><div class="stat-num"><span data-count="50">0</span><em>+</em></div><div class="stat-label">разработчиков<br>в команде</div></div>
+        <div class="stat" data-reveal style="--d:.06s"><div class="stat-num"><span data-count="30">0</span><em>+</em></div><div class="stat-label">завершённых<br>проектов</div></div>
+        <div class="stat" data-reveal style="--d:.12s"><div class="stat-num"><span data-count="1">0</span><small>млн</small><em>+</em></div><div class="stat-label">пользователей<br>наших продуктов</div></div>
+        <div class="stat" data-reveal style="--d:.18s"><div class="stat-num"><span data-count="90">0</span><em>%</em></div><div class="stat-label">специалистов уровня<br>senior и middle+</div></div>
+        <div class="stat" data-reveal style="--d:.24s"><div class="stat-num"><span data-count="800">0</span><small>млн ₸</small><em>+</em></div><div class="stat-label">подтверждённый<br>эффект для клиентов</div></div>
+        <div class="stat" data-reveal style="--d:.3s"><div class="stat-num"><span data-count="5">0</span><small>лет</small><em>+</em></div><div class="stat-label">на рынке<br>IT-услуг</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee" aria-label="Клиенты и технологии">
+    <div class="marquee-track">
+      <div class="marquee-group">
+        <span>Страна Девелопмент</span><i></i><span>BI Group</span><i></i><span>Sensata Group</span><i></i><span>NRG Uzbekistan</span><i></i><span>Engineering Services</span><i></i><span class="m-tech">1С</span><i></i><span class="m-tech">BIM</span><i></i><span class="m-tech">BI</span><i></i><span class="m-tech">LLM</span><i></i><span class="m-tech">СКУД</span><i></i>
+      </div>
+      <div class="marquee-group" aria-hidden="true">
+        <span>Страна Девелопмент</span><i></i><span>BI Group</span><i></i><span>Sensata Group</span><i></i><span>NRG Uzbekistan</span><i></i><span>Engineering Services</span><i></i><span class="m-tech">1С</span><i></i><span class="m-tech">BIM</span><i></i><span class="m-tech">BI</span><i></i><span class="m-tech">LLM</span><i></i><span class="m-tech">СКУД</span><i></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ 01 ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="s-head">
+        <span class="s-label" data-reveal><i>01</i>Кто мы</span>
+        <h2 data-reveal style="--d:.06s">Разработка и интеграция промышленного ПО&nbsp;под&nbsp;ключ</h2>
+        <p data-reveal style="--d:.12s">Собственный портфель продуктов и экспертиза в AI и BIM. Мы не продаём «программу» — мы собираем рабочую систему управления стройкой и остаёмся рядом после запуска.</p>
+      </div>
+
+      <div class="pillars">
+        <article class="pillar spot" data-reveal>
+          <div class="pillar-top">
+            <span class="pillar-icon"><svg viewBox="0 0 24 24"><path d="M12 3 3 8l9 5 9-5-9-5Z"/><path d="m3 12.5 9 5 9-5"/><path d="m3 17 9 5 9-5"/></svg></span>
+            <span class="mono pillar-n">/01</span>
+          </div>
+          <h3>Интеграция под ключ</h3>
+          <p>Полный цикл — от обследования до сопровождения.</p>
+          <ol class="flow">
+            <li>Обследование</li><li>Проектирование</li><li>Внедрение</li><li>Обучение</li><li>Сопровождение</li>
+          </ol>
+        </article>
+        <article class="pillar spot pillar-accent" data-reveal style="--d:.08s">
+          <div class="pillar-top">
+            <span class="pillar-icon"><svg viewBox="0 0 24 24"><path d="M21 8 12 3 3 8v8l9 5 9-5V8Z"/><path d="m3 8 9 5 9-5"/><path d="M12 13v8"/></svg></span>
+            <span class="mono pillar-n">/02</span>
+          </div>
+          <h3>Готовое решение</h3>
+          <p>Tempo Build — быстрый запуск и адаптация под процессы заказчика.</p>
+          <div class="tags"><span>Сроки</span><span>Качество</span><span>БиОТ</span><span>Персонал и СКУД</span></div>
+        </article>
+        <article class="pillar spot" data-reveal style="--d:.16s">
+          <div class="pillar-top">
+            <span class="pillar-icon"><svg viewBox="0 0 24 24"><path d="M20.5 12a8.5 8.5 0 0 1-14.8 5.7M3.5 12A8.5 8.5 0 0 1 18.3 6.3"/><path d="M18.5 2.5v4h-4M5.5 21.5v-4h4"/></svg></span>
+            <span class="mono pillar-n">/03</span>
+          </div>
+          <h3>Операционная эффективность</h3>
+          <p>Перестраиваем процессы «как есть → как должно быть», чтобы автоматизация дала эффект.</p>
+          <div class="asis">
+            <span class="asis-a">как есть</span>
+            <svg viewBox="0 0 60 12" class="asis-arrow"><path d="M0 6h56M50 1l6 5-6 5"/></svg>
+            <span class="asis-b">как должно быть</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 02 PAIN ============ -->
+  <section class="section section-soft" id="pain">
+    <div class="container pain-layout">
+      <div class="pain-copy">
+        <span class="s-label" data-reveal><i>02</i>Что болит</span>
+        <h2 data-reveal style="--d:.06s">Компания растёт — процессы расползаются по Excel, WhatsApp и&nbsp;1С</h2>
+        <p data-reveal style="--d:.12s">Наша задача — не заменить все системы одной платформой, а связать учёт, стройку, финансы и документы в управляемую архитектуру.</p>
+        <div class="chaos" id="chaos" data-reveal style="--d:.18s">
+          <div class="chaos-title mono"><span class="chaos-state" data-off="хаос" data-on="единый контур">хаос</span></div>
+          <div class="chaos-grid">
+            <span class="chip c-xl">Excel</span>
+            <span class="chip c-wa">WhatsApp</span>
+            <span class="chip c-1c">1С</span>
+            <span class="chip">Почта</span>
+            <span class="chip">Бумажные акты</span>
+            <span class="chip c-wa">Telegram</span>
+            <span class="chip c-xl">Google Sheets</span>
+            <span class="chip">Звонки</span>
+            <span class="chip c-1c">1С:Смета</span>
+          </div>
+        </div>
+      </div>
+      <div class="pains">
+        <article class="pain spot" data-reveal><span class="pain-n mono">01</span><div><h3>Смета не связана с фактом</h3><p>Объёмы, договоры, акты, ТМЦ и оплаты живут в разных контурах — руководству сложно видеть остатки и отклонения.</p></div></article>
+        <article class="pain spot" data-reveal style="--d:.06s"><span class="pain-n mono">02</span><div><h3>Договоры и акты теряются в маршрутах</h3><p>Согласования идут через почту и мессенджеры: нет единого статуса, истории, SLA и ответственности.</p></div></article>
+        <article class="pain spot" data-reveal style="--d:.12s"><span class="pain-n mono">03</span><div><h3>ТМЦ закупаются без прозрачного следа</h3><p>Заявки, поставщики, склады, поступления и передача подрядчикам ведутся вручную.</p></div></article>
+        <article class="pain spot" data-reveal style="--d:.18s"><span class="pain-n mono">04</span><div><h3>Платежи сложно контролировать</h3><p>Финансы не видят основание, остаток по договору, бюджетный лимит и приоритет оплаты.</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 03 MODEL ============ -->
+  <section class="section section-dark" id="model">
+    <div class="dark-deco" aria-hidden="true"></div>
+    <div class="container">
+      <div class="s-head s-head-dark">
+        <span class="s-label" data-reveal><i>03</i>Наша модель</span>
+        <h2 data-reveal style="--d:.06s">1С + Tempo Build + BI + AI + отраслевые эксперты</h2>
+        <p data-reveal style="--d:.12s">1С остаётся надёжным учётно-налоговым ядром, веб-контур закрывает операционные процессы, а AI подключается там, где снимает ручную работу.</p>
+      </div>
+
+      <div class="model">
+        <article class="m-card" data-reveal><span class="m-badge">1С</span><h3>Учёт и налоги</h3><p>Бухгалтерия, ФНО, НДС, КПН, ЭСФ, СНТ, ЭАВР, банк, закрытие месяца.</p></article>
+        <article class="m-card m-card-main" data-reveal style="--d:.06s"><span class="m-badge">TB</span><h3>Tempo Build</h3><p>Сроки, качество, безопасность, персонал, договоры, акты, ТМЦ и смета.</p></article>
+        <article class="m-card" data-reveal style="--d:.12s"><span class="m-badge">BI</span><h3>Панель руководителя</h3><p>Обязательства, платежи, сроки, остатки и отклонения по объектам.</p></article>
+        <article class="m-card" data-reveal style="--d:.18s"><span class="m-badge">AI</span><h3>LLM и агенты</h3><p>Поиск по документам, анализ договоров, заявок, рисков и база знаний.</p></article>
+        <article class="m-card" data-reveal style="--d:.24s"><span class="m-badge">EX</span><h3>Эксперты</h3><p>Финдиректор, планировщик, ПТО, закупки, РП, 1С-франчайзи, аналитики.</p></article>
+      </div>
+
+      <div class="chain-wrap" data-reveal>
+        <div class="chain-head">
+          <span class="mono">// ключевая цепочка управления строительством</span>
+          <span class="mono chain-pct"><b id="chainPct">0</b>%</span>
+        </div>
+        <div class="chain" id="chain">
+          <svg class="chain-svg" id="chainSvg" aria-hidden="true">
+            <defs>
+              <linearGradient id="chainGrad" gradientUnits="userSpaceOnUse" x1="0" x2="1000" y1="0" y2="0">
+                <stop offset="0" stop-color="#4cb3e8" />
+                <stop offset="1" stop-color="#f27a2e" />
+              </linearGradient>
+            </defs>
+            <path class="chain-base" id="chainBase" />
+            <path class="chain-prog" id="chainProg" stroke="url(#chainGrad)" />
+          </svg>
+          <span class="chain-dot" id="chainDot" aria-hidden="true"></span>
+          <div class="node"><span class="node-n mono">01</span><b>Смета</b></div>
+          <div class="node"><span class="node-n mono">02</span><b>Договор</b></div>
+          <div class="node"><span class="node-n mono">03</span><b>Заказ ТМЦ</b></div>
+          <div class="node"><span class="node-n mono">04</span><b>Акт / КС-2 / КС-3</b></div>
+          <div class="node"><span class="node-n mono">05</span><b>Заявка на оплату</b></div>
+          <div class="node"><span class="node-n mono">06</span><b>1С / банк</b></div>
+          <div class="node"><span class="node-n mono">07</span><b>BI / отчётность</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 04 SOLUTIONS ============ -->
+  <section class="section" id="solutions">
+    <div class="container">
+      <div class="s-head s-head-split">
+        <div>
+          <span class="s-label" data-reveal><i>04</i>Решения</span>
+          <h2 data-reveal style="--d:.06s">Что мы делаем для строительных и девелоперских компаний</h2>
+        </div>
+        <p data-reveal style="--d:.12s">Внедряем готовые решения, разрабатываем модули под процессы, интегрируемся с 1С — или собираем гибридную архитектуру.</p>
+      </div>
+
+      <div class="sol-list">
+        <a href="#contact" class="sol" data-reveal><span class="sol-n mono">01</span><div class="sol-main"><h3>1С и регламентированный учёт</h3><p>Правильно встраиваем 1С в цифровой ландшафт строительной компании.</p></div><div class="sol-tags"><span>1С:БСО</span><span>ФНО · ЭСФ · СНТ</span><span>Казначейство · БДДС</span></div><span class="sol-arr">↗</span></a>
+        <a href="#contact" class="sol" data-reveal><span class="sol-n mono">02</span><div class="sol-main"><h3>Договоры, акты и закрывающие документы</h3><p>Прозрачный договорной контур — от заявки до оплаты.</p></div><div class="sol-tags"><span>Заявка на договор</span><span>КС-2 / КС-3</span><span>Связь со сметой</span></div><span class="sol-arr">↗</span></a>
+        <a href="#contact" class="sol" data-reveal><span class="sol-n mono">03</span><div class="sol-main"><h3>Снабжение и ТМЦ</h3><p>От заявки на материалы до передачи подрядчику.</p></div><div class="sol-tags"><span>Заказ из сметы</span><span>Поставщики</span><span>Склад и перемещения</span></div><span class="sol-arr">↗</span></a>
+        <a href="#contact" class="sol" data-reveal><span class="sol-n mono">04</span><div class="sol-main"><h3>Сметный контур</h3><p>Старт на 1С:Смета, дальше — собственный сметный модуль.</p></div><div class="sol-tags"><span>Структура работ</span><span>План-факт</span><span>Объёмы и бюджет</span></div><span class="sol-arr">↗</span></a>
+        <a href="#contact" class="sol" data-reveal><span class="sol-n mono">05</span><div class="sol-main"><h3>Качество, ОТ и безопасность</h3><p>Контроль с площадки — в цифровом контуре с фото, видео и чек-листами.</p></div><div class="sol-tags"><span>Чек-листы</span><span>Дефекты</span><span>Инструктажи</span></div><span class="sol-arr">↗</span></a>
+        <a href="#contact" class="sol" data-reveal><span class="sol-n mono">06</span><div class="sol-main"><h3>BI и панель руководителя</h3><p>Понятные данные для операционного директора, CFO, CEO и собственника.</p></div><div class="sol-tags"><span>Сроки и деньги</span><span>Платёжный календарь</span><span>Портфель</span></div><span class="sol-arr">↗</span></a>
+        <a href="#ai" class="sol" data-reveal><span class="sol-n mono">07</span><div class="sol-main"><h3>AI-модули, LLM и агенты</h3><p>Искусственный интеллект там, где он усиливает процессы и снижает ручную работу.</p></div><div class="sol-tags"><span>База знаний</span><span>Анализ договоров</span><span>AI-агенты</span></div><span class="sol-arr">↗</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 05 TEMPO BUILD ============ -->
+  <section class="section section-soft" id="tempo">
+    <div class="container tempo-layout">
+      <div class="tempo-copy">
+        <span class="s-label" data-reveal><i>05</i>Собственный продукт</span>
+        <h2 data-reveal style="--d:.06s"><span class="tb-mark">TEMPO</span> Build</h2>
+        <p class="tempo-lead" data-reveal style="--d:.12s">Модульная платформа для управления строительством. Подключайте только нужные модули — сначала самые болевые процессы, затем весь цифровой контур.</p>
+
+        <div class="modules" id="modules" data-reveal style="--d:.18s">
+          <button class="mod" data-w="gantt"><span>Сроки и графики</span></button>
+          <button class="mod" data-w="quality"><span>Качество</span></button>
+          <button class="mod" data-w="quality"><span>ОТ и безопасность</span></button>
+          <button class="mod" data-w="staff"><span>Персонал и СКУД</span></button>
+          <button class="mod" data-w="docs"><span>Договоры и акты</span></button>
+          <button class="mod" data-w="tmc"><span>Заказ ТМЦ</span></button>
+          <button class="mod" data-w="docs"><span>Смета</span></button>
+          <button class="mod" data-w="docs"><span>Интеграция с 1С</span></button>
+          <button class="mod" data-w="ai"><span>AI и LLM-агенты</span></button>
+        </div>
+        <p class="mono tempo-hint" data-reveal>↳ наведите на модуль — подсветим его в интерфейсе</p>
+      </div>
+
+      <div class="app" id="app" data-reveal style="--d:.1s" aria-hidden="true">
+        <div class="app-bar">
+          <span class="dots"><i></i><i></i><i></i></span>
+          <span class="app-url mono">tempo.build / ЖК «Северный квартал»</span>
+          <span class="app-live"><i></i>live</span>
+        </div>
+        <div class="app-body">
+          <div class="w w-gantt" data-w="gantt">
+            <div class="w-head"><b>Производственный график</b><span class="mono">нед. 41</span></div>
+            <div class="gantt">
+              <div class="g-today" style="--x:58%"></div>
+              <div class="g-row"><span>Котлован</span><div class="g-track"><i style="--s:0%;--w:22%" class="done"></i></div></div>
+              <div class="g-row"><span>Фундамент</span><div class="g-track"><i style="--s:16%;--w:24%" class="done"></i></div></div>
+              <div class="g-row"><span>Каркас 1–9 эт.</span><div class="g-track"><i style="--s:34%;--w:30%" class="cur"></i></div></div>
+              <div class="g-row"><span>Фасад</span><div class="g-track"><i style="--s:55%;--w:26%"></i></div></div>
+              <div class="g-row"><span>Инж. сети</span><div class="g-track"><i style="--s:62%;--w:30%"></i></div></div>
+              <div class="g-row"><span>Отделка</span><div class="g-track"><i style="--s:76%;--w:24%"></i></div></div>
+            </div>
+          </div>
+
+          <div class="w w-ring" data-w="gantt">
+            <svg viewBox="0 0 80 80" class="ring"><circle cx="40" cy="40" r="32" class="ring-bg"/><circle cx="40" cy="40" r="32" class="ring-fg" style="--p:.68"/></svg>
+            <div class="ring-txt"><b>68%</b><span>готовность</span></div>
+          </div>
+
+          <div class="w w-quality" data-w="quality">
+            <div class="w-head"><b>Замечания</b><span class="mono">12 откр.</span></div>
+            <ul class="q-list">
+              <li><span class="q-st st-red"></span>Трещина в стяжке, 4 эт.<em>фото</em></li>
+              <li><span class="q-st st-amb"></span>Нет ограждения проёма<em>ОТ</em></li>
+              <li><span class="q-st st-grn"></span>Армирование принято<em>✓</em></li>
+            </ul>
+          </div>
+
+          <div class="w w-docs" data-w="docs">
+            <div class="w-head"><b>Документы</b><span class="mono">→ 1С</span></div>
+            <div class="doc-row"><span>КС-2 №47</span><span class="badge b-ok">подписан</span></div>
+            <div class="doc-row"><span>Договор №214</span><span class="badge b-wait">согласование</span></div>
+            <div class="doc-row"><span>Заявка на оплату</span><span class="badge b-new">в реестре</span></div>
+          </div>
+
+          <div class="w w-tmc" data-w="tmc">
+            <div class="w-head"><b>ТМЦ</b><span class="mono">склад №2</span></div>
+            <div class="tmc-bars">
+              <div><span>Арматура А500</span><div class="tb"><i style="--w:92%"></i></div></div>
+              <div><span>Бетон B25</span><div class="tb"><i style="--w:64%"></i></div></div>
+              <div><span>Газоблок</span><div class="tb"><i style="--w:38%" class="low"></i></div></div>
+            </div>
+          </div>
+
+          <div class="w w-staff" data-w="staff">
+            <div class="w-head"><b>На объекте</b><span class="mono">СКУД</span></div>
+            <div class="staff-num"><b>186</b><span>чел. сейчас</span></div>
+            <div class="spark"><i style="--h:40%"></i><i style="--h:55%"></i><i style="--h:48%"></i><i style="--h:70%"></i><i style="--h:82%"></i><i style="--h:76%"></i><i style="--h:90%"></i></div>
+          </div>
+
+          <div class="w w-ai" data-w="ai">
+            <span class="ai-spark">✦</span>
+            <span>AI: в акте №7 не зачтён аванс 4,2 млн ₸</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="effects" data-reveal>
+        <span class="mono effects-label">эффект →</span>
+        <span>сокращение длительности цикла</span><i></i>
+        <span>снижение дефектов</span><i></i>
+        <span>ускорение сдачи работ</span><i></i>
+        <span>оптимизация ресурсов</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 06 AI ============ -->
+  <section class="section section-dark" id="ai">
+    <div class="dark-deco dark-deco-2" aria-hidden="true"></div>
+    <div class="container ai-layout">
+      <div class="ai-copy">
+        <span class="s-label" data-reveal><i>06</i>AI-модули</span>
+        <h2 data-reveal style="--d:.06s">LLM и AI-агенты, которые знают вашу стройку</h2>
+        <p data-reveal style="--d:.12s">Мы не продаём AI как модную надстройку. Он подключается к конкретным процессам: документы, договоры, сметы, ТМЦ, оплаты, регламенты и управленческая аналитика.</p>
+
+        <div class="ai-cards">
+          <div class="ai-card" data-reveal><b>AI-помощник сотрудника</b><span>Ответы по регламентам, инструкциям и шаблонам документов.</span></div>
+          <div class="ai-card" data-reveal style="--d:.06s"><b>Анализ договоров и актов</b><span>Риски, недостающие условия, расхождения в суммах и сроках.</span></div>
+          <div class="ai-card" data-reveal style="--d:.12s"><b>Агент для заявок на оплату</b><span>Основание, остаток, аванс, статья ДДС и комплектность.</span></div>
+          <div class="ai-card" data-reveal style="--d:.18s"><b>Агент для ПТО и снабжения</b><span>Сверка объёмов, заявок на ТМЦ, поступлений и отклонений.</span></div>
+        </div>
+      </div>
+
+      <div class="chat" id="chat" data-reveal style="--d:.1s" aria-hidden="true">
+        <div class="chat-head">
+          <span class="chat-ava">✦</span>
+          <div><b>Bright AI</b><span>агент финансового контура</span></div>
+          <span class="chat-status"><i></i>онлайн</span>
+        </div>
+        <div class="chat-body" id="chatBody">
+          <div class="msg msg-user" id="msgUser"></div>
+          <div class="msg msg-typing" id="msgTyping"><i></i><i></i><i></i></div>
+          <div class="msg msg-bot" id="msgBot"></div>
+          <div class="msg-src" id="msgSrc"><span>Договор №214</span><span>КС-2 №7</span><span>1С · ДДС</span></div>
+        </div>
+        <div class="chat-input"><span id="chatInput" class="chat-placeholder">Спросите о договоре, акте или платеже…</span><span class="chat-send">↑</span></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="ai-note" data-reveal>
+        <span class="ai-note-step"><b>1</b>Порядок в данных: 1С, справочники, статусы, интеграции</span>
+        <span class="ai-note-arrow">→</span>
+        <span class="ai-note-step"><b>2</b>LLM, агенты, поиск, рекомендации и автопроверки</span>
+        <span class="ai-note-badge mono">AI-ready architecture</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 07 CASES ============ -->
+  <section class="section" id="cases">
+    <div class="container">
+      <div class="s-head s-head-split">
+        <div>
+          <span class="s-label" data-reveal><i>07</i>Кейсы</span>
+          <h2 data-reveal style="--d:.06s">Решения для лидеров рынка Казахстана, России и&nbsp;Узбекистана</h2>
+        </div>
+        <p data-reveal style="--d:.12s">Тендерные площадки, CRM, мобильные приложения для стройки, сервисы актов и графиков — всё, что разрабатывали и внедряли для крупных девелоперов.</p>
+      </div>
+
+      <div class="cases">
+        <article class="case case-xl spot" data-reveal>
+          <div class="case-top"><span class="case-geo mono">Россия · федеральный девелопер</span><span class="case-letter">✉ рекомендательное письмо</span></div>
+          <h3>Страна Девелопмент</h3>
+          <div class="case-facts">
+            <div><b>#10</b><span>по объёму строительства, ЕРЗ.РФ</span></div>
+            <div><b>1,2 млн м²</b><span>в СМР</span></div>
+            <div><b>3 млн м²</b><span>в проектировании</span></div>
+          </div>
+          <ul class="case-work">
+            <li>Тендерная площадка: аккредитация подрядчиков, открытые и закрытые торги, машиночитаемые сметы</li>
+            <li>Мобильное и веб-решение для генподрядчика и субподрядчиков: графики, качество, ОТ, стройконтроль</li>
+            <li>Сервис приёмки-передачи работ и формирования актов с интеграцией платёжной системы</li>
+          </ul>
+          <div class="tags case-scope"><span>Разработка</span><span>Дизайн UX/UI</span><span>Вёрстка</span><span>Сложные бизнес-логики и API</span><span>Техподдержка</span></div>
+        </article>
+
+        <article class="case spot" data-reveal style="--d:.06s">
+          <div class="case-top"><span class="case-geo mono">Казахстан · холдинг</span></div>
+          <h3>BI Group</h3>
+          <div class="case-facts case-facts-sm">
+            <div><b>#193</b><span>ENR Top 250 Global Contractors</span></div>
+            <div><b>2 млн м²</b><span>сдаёт ежегодно</span></div>
+          </div>
+          <div class="tags"><span>Корпоративный сайт</span><span>CRM продаж</span><span>Приложение для стройки</span><span>Чек-листы качества</span></div>
+        </article>
+
+        <article class="case spot" data-reveal style="--d:.12s">
+          <div class="case-top"><span class="case-geo mono">Казахстан · девелопер</span></div>
+          <h3>Sensata Group</h3>
+          <div class="case-facts case-facts-sm">
+            <div><b>30</b><span>проектов в СМР</span></div>
+            <div><b>3000+</b><span>квартир в год</span></div>
+          </div>
+          <div class="tags"><span>Тендерная площадка</span><span>Сроки портфеля</span><span>Графики работ</span><span>База знаний</span></div>
+        </article>
+
+        <article class="case spot" data-reveal style="--d:.06s">
+          <div class="case-top"><span class="case-geo mono">Узбекистан · Ташкент</span></div>
+          <h3>NRG Uzbekistan</h3>
+          <p>Один из крупнейших девелоперов Ташкента: сайт с каталогом недвижимости, быстрым поиском и передачей лидов в CRM.</p>
+          <div class="tags"><span>UX/UI</span><span>Каталог</span><span>CRM-интеграция</span></div>
+        </article>
+
+        <article class="case spot" data-reveal style="--d:.12s">
+          <div class="case-top"><span class="case-geo mono">Международный инжиниринг</span></div>
+          <h3>Engineering Services</h3>
+          <div class="case-facts case-facts-sm">
+            <div><b>500+</b><span>завершённых проектов</span></div>
+            <div><b>4,5 млн м²</b><span>сопровождает ежемесячно</span></div>
+          </div>
+          <div class="tags"><span>DES</span><span>Контроль качества</span><span>Приёмка работ</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 08 PACKAGES ============ -->
+  <section class="section section-soft" id="packages">
+    <div class="container">
+      <div class="s-head s-head-split">
+        <div>
+          <span class="s-label" data-reveal><i>08</i>Пакеты зрелости</span>
+          <h2 data-reveal style="--d:.06s">Не всем нужен ERP на старте</h2>
+        </div>
+        <p data-reveal style="--d:.12s">Подбираем уровень под масштаб компании. Ориентир по м² предварительный — финальный пакет определяется после экспресс-аудита.</p>
+      </div>
+
+      <div class="packs">
+        <article class="pack" data-reveal>
+          <div class="pack-lvl"><i class="on"></i><i></i><i></i></div>
+          <span class="pack-label mono">базовый уровень</span>
+          <h3>Minimum</h3>
+          <span class="pack-scale">от 50 тыс. м² портфеля</span>
+          <ul><li>1С Бухгалтерия</li><li>ЭДО и корпоративное хранилище</li><li>CRM продаж и task tracking</li><li>Базовые платежи</li><li>Service Desk</li></ul>
+          <p class="pack-res">Выход из хаоса базовых процессов и устойчивый учётный контур.</p>
+        </article>
+        <article class="pack pack-hot" data-reveal style="--d:.08s">
+          <span class="pack-rec">Рекомендуем</span>
+          <div class="pack-lvl"><i class="on"></i><i class="on"></i><i></i></div>
+          <span class="pack-label mono">операционный уровень</span>
+          <h3>Comfort</h3>
+          <span class="pack-scale">от 200 тыс. м² портфеля</span>
+          <ul><li>1С Бухгалтерия строительной организации</li><li>Договоры, акты, КС-2/КС-3</li><li>Заказ ТМЦ и склад</li><li>Заявки на оплату и реестр платежей</li><li>Интеграция с 1С:Смета</li><li>Качество, ОТ и сроки</li></ul>
+          <p class="pack-res">Вся цепочка на ладони: смета → договор → ТМЦ → акт → платёж → отчётность.</p>
+        </article>
+        <article class="pack" data-reveal style="--d:.16s">
+          <div class="pack-lvl"><i class="on"></i><i class="on"></i><i class="on"></i></div>
+          <span class="pack-label mono">экосистемный уровень</span>
+          <h3>Maximum</h3>
+          <span class="pack-scale">от 500 тыс. м² портфеля</span>
+          <ul><li>1С ERP и бюджетирование</li><li>Развитое казначейство и платёжный календарь</li><li>Сквозной контроль себестоимости</li><li>BIM и BI</li><li>AI-модули, LLM-агенты, прогнозирование</li></ul>
+          <p class="pack-res">Управление не только процессами, но и деньгами, себестоимостью и ростом.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 09 TEAM ============ -->
+  <section class="section" id="team">
+    <div class="container team-layout">
+      <article class="founder" data-reveal>
+        <div class="founder-deco" aria-hidden="true"></div>
+        <span class="s-label s-label-light"><i>09</i>Экспертиза</span>
+        <div class="founder-id">
+          <span class="founder-ava">ЕА</span>
+          <div><b>Еркин Акимбеков</b><span>основатель Bright Tech</span></div>
+        </div>
+        <p>Лично участвует в экспресс-аудите, постановке целевой архитектуры и формировании roadmap. Дальше внедрение ведут проектные менеджеры и профильные эксперты — это позволяет вести несколько компаний параллельно без потери отраслевой логики.</p>
+        <div class="founder-stats">
+          <div><b><span data-count="10">0</span>+</b><span>лет в ИТ и строительстве</span></div>
+          <div><b><span data-count="17">0</span></b><span>цифровых продуктов</span></div>
+          <div><b><span data-count="11">0</span></b><span>решений за 12 месяцев</span></div>
+          <div><b><span data-count="30000" data-sep="1">0</span>+</b><span>контрагентов в контуре</span></div>
+        </div>
+      </article>
+
+      <div class="team-right">
+        <h2 data-reveal>Команда под задачу клиента</h2>
+        <p class="team-lead" data-reveal style="--d:.06s">После аудита формируем проектную группу: менеджер ведёт внедрение, а эксперты подключаются точечно — там, где нужна строительная, финансовая или 1С-экспертиза.</p>
+        <div class="roles">
+          <div class="role" data-reveal><b>Финансовый директор</b><span>БДДС, лимиты, платежи, казначейство</span></div>
+          <div class="role" data-reveal style="--d:.04s"><b>Планировщик</b><span>Графики, вехи, контроль сроков</span></div>
+          <div class="role" data-reveal style="--d:.08s"><b>Начальник ПТО</b><span>КС-2/КС-3, исполнительная документация</span></div>
+          <div class="role" data-reveal style="--d:.12s"><b>Закупщик</b><span>ТМЦ, поставщики, склад</span></div>
+          <div class="role" data-reveal style="--d:.16s"><b>Руководитель проекта</b><span>Связь системы с реальной стройкой</span></div>
+          <div class="role" data-reveal style="--d:.2s"><b>1С-франчайзи</b><span>Учёт, налоги, интеграции</span></div>
+        </div>
+        <div class="training" data-reveal>
+          <span class="mono">обучаем команды →</span>
+          <span>руководителей</span><span>ПТО</span><span>снабжение</span><span>финансы</span><span>проектные команды</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 10 START ============ -->
+  <section class="section section-soft" id="start">
+    <div class="container">
+      <div class="s-head s-head-split">
+        <div>
+          <span class="s-label" data-reveal><i>10</i>Как начинаем</span>
+          <h2 data-reveal style="--d:.06s">Сначала короткая диагностика, потом персональное КП</h2>
+        </div>
+        <p data-reveal style="--d:.12s">Мы не предлагаем всем одинаковое решение. Смотрим текущий уровень компании и собираем архитектуру, пакет модулей и этапы внедрения.</p>
+      </div>
+
+      <ol class="steps" id="steps">
+        <li class="step" data-reveal><span class="step-n">1</span><b>Оцениваем масштаб</b><span>Проекты, м², юрлица, подрядчики, объём договоров и платежей.</span></li>
+        <li class="step" data-reveal style="--d:.08s"><span class="step-n">2</span><b>Проверяем 1С и данные</b><span>НСИ, договоры, контрагенты, статьи затрат, банк, налоги, БДДС.</span></li>
+        <li class="step" data-reveal style="--d:.16s"><span class="step-n">3</span><b>Фиксируем узкие места</b><span>Смета, договоры, акты, ТМЦ, платежи, сроки, качество, кадры.</span></li>
+        <li class="step" data-reveal style="--d:.24s"><span class="step-n">4</span><b>Формируем предложение</b><span>Пакет, состав модулей, roadmap и быстрые победы.</span></li>
+      </ol>
+
+      <div class="scenarios">
+        <div class="scenario" data-reveal>
+          <span class="mono">сценарий A</span>
+          <b>Экспресс-аудит + быстрый пилот на Tempo Build</b>
+          <span>Запуск на готовом решении за недели, а не месяцы.</span>
+        </div>
+        <div class="scenario-or mono" data-reveal>или</div>
+        <div class="scenario" data-reveal style="--d:.08s">
+          <span class="mono">сценарий B</span>
+          <b>Разработка и интеграция под ключ</b>
+          <span>Собственные модули, 1С, BI и AI под процессы компании.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="contact-bg" aria-hidden="true">
+      <div class="hero-grid-lines"></div>
+      <div class="glow glow-3"></div>
+    </div>
+    <div class="container contact-layout">
+      <div class="contact-copy">
+        <span class="s-label s-label-light" data-reveal>Обсудим ваш проект</span>
+        <h2 data-reveal style="--d:.06s">Соберём персональное предложение для вашей компании</h2>
+        <p data-reveal style="--d:.12s">Расскажите о масштабе, системах и главной боли — 1С, сметы, договоры, акты, ТМЦ, платежи, сроки или качество. Экспресс-аудит займёт 30–60 минут.</p>
+        <div class="contacts" data-reveal style="--d:.18s">
+          <a href="mailto:sales@brighttech.pro" class="contact-link"><span class="mono">email</span>sales@brighttech.pro</a>
+          <a href="tel:+77015364054" class="contact-link"><span class="mono">телефон</span>+7 701 536 40 54</a>
+          <a href="https://brighttech.pro" target="_blank" rel="noopener" class="contact-link"><span class="mono">сайт</span>brighttech.pro</a>
+        </div>
+      </div>
+
+      <form class="form" id="form" data-reveal style="--d:.1s" novalidate>
+        <div class="form-title"><b>Заявка на экспресс-аудит</b><span class="mono">≈ 1 минута</span></div>
+        <label class="field"><input name="name" required placeholder=" " autocomplete="name" /><span>Имя</span></label>
+        <label class="field"><input name="company" placeholder=" " autocomplete="organization" /><span>Компания</span></label>
+        <label class="field"><input name="phone" required placeholder=" " type="tel" autocomplete="tel" /><span>Телефон или email</span></label>
+        <div class="form-q">Что болит сильнее всего?</div>
+        <div class="choice" id="choice">
+          <label><input type="checkbox" value="1С и учёт" /><span>1С и учёт</span></label>
+          <label><input type="checkbox" value="Сметы" /><span>Сметы</span></label>
+          <label><input type="checkbox" value="Договоры и акты" /><span>Договоры и акты</span></label>
+          <label><input type="checkbox" value="ТМЦ" /><span>ТМЦ</span></label>
+          <label><input type="checkbox" value="Платежи" /><span>Платежи</span></label>
+          <label><input type="checkbox" value="Сроки и качество" /><span>Сроки и качество</span></label>
+        </div>
+        <button class="btn btn-primary btn-wide" type="submit">Отправить заявку <span class="arr">→</span></button>
+        <p class="form-note" id="formNote">Откроется ваш почтовый клиент с готовым письмом на sales@brighttech.pro</p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#top" class="logo logo-sm" aria-label="Bright Tech">
+        <span class="logo-word">br<span class="logo-i">ı</span>ght</span>
+        <span class="logo-word">te<span class="logo-accent">ch</span></span>
+      </a>
+      <p>Отраслевой интегратор цифровых решений для строительства и девелопмента.<br>Tempo Build — собственная платформа Bright Tech.</p>
+      <span class="mono footer-copy">© <span id="year">2026</span> Bright Tech</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
