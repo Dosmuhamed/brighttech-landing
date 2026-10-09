@@ -13,18 +13,17 @@
   const burger = document.getElementById('burger');
   const onScrollNav = () => nav.classList.toggle('scrolled', window.scrollY > 30);
   onScrollNav();
-  burger.addEventListener('click', () => {
-    const open = nav.classList.toggle('open');
+  const setMenu = (open) => {
+    nav.classList.toggle('open', open);
     burger.setAttribute('aria-expanded', open);
+    burger.setAttribute('aria-label', open ? 'Закрыть меню' : 'Меню');
+    document.documentElement.style.overflow = open ? 'hidden' : '';
     document.body.style.overflow = open ? 'hidden' : '';
-  });
-  document.querySelectorAll('#navLinks a').forEach((a) =>
-    a.addEventListener('click', () => {
-      nav.classList.remove('open');
-      burger.setAttribute('aria-expanded', 'false');
-      document.body.style.overflow = '';
-    })
-  );
+  };
+  burger.addEventListener('click', () => setMenu(!nav.classList.contains('open')));
+  document.querySelectorAll('#navLinks a').forEach((a) => a.addEventListener('click', () => setMenu(false)));
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && nav.classList.contains('open')) setMenu(false); });
+  matchMedia('(min-width: 961px)').addEventListener('change', (e) => { if (e.matches) setMenu(false); });
 
   const navMap = new Map();
   document.querySelectorAll('#navLinks a[href^="#"]').forEach((a) => navMap.set(a.getAttribute('href').slice(1), a));
